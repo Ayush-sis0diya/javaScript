@@ -9,4 +9,4 @@ let islogggin = true // bollean data type = true/false
 // object 
 
 console.log(typeof(null)); //object
-console.log(typeof(undefined)); //undefined
+console.log(typeof(undefined)); //undefine
