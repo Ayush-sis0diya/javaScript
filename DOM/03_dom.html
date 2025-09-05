@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white">
+    <script>
+        const arr1 = ['ashish','bhanu','naveen','gautam']
+    const arr2 = ['blue','green','yellow','red']
+    arr1.forEach( ( text,index ) => multipleButtons(text,arr2[index]))
+   
+
+    function multipleButtons(text,bgColor)
+    {
+     const button = document.createElement('button')
+     console.log(button)
+     button.setAttribute('className','firstbutton')
+     button.setAttribute('type','submit')
+     button.style.backgroundColor = `${bgColor}`
+     button.style.cursor = 'pointer'
+     button.style.padding = "12px"
+     button.style.borderRadius = "10px"
+     const textnode = document.createTextNode(`${text}`)
+     button.appendChild(textnode)
+     document.body.appendChild(button)
+    }
+
+
+        // const div = document.createElement('div')
+        // const arr1 = ["ayush","bhola","bajrang","maa"];
+        // const arr2 = ['yellow','blue','orange','red'];
+
+        // arr1.forEach((text,index)=>multipebutton(text,arr2[index]))
+        
+        // function multipebutton(text,bgColor){
+        //     const button = document.createElement('button')
+        //     console.log(button)
+        //     button.id = "first"
+        //     button.setAttribute("type","submit")
+        //     button.
+        //     button.style.backgroundColor = '${bgColor}'
+        //     const value = document.createTextNode(`${text}`)
+        //     button.appendChild(value)
+            
+
+        //     document.body.appendChild(button)
+
+        // }
+       
+        // div.className="first_div"
+        // div.setAttribute("title","title generated ")
+
+        // div.style.backgroundColor ="green"
+        // div.style.padding="12px"
+        // const value = document.createTextNode("chai aur code")
+        // div.appendChild(value)
+
+        // document.body.appendChild(div)
+    </script>
+</body>
+</html>
